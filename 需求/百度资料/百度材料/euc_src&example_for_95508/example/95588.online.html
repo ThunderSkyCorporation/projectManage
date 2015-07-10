@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<title>广发银行慧理财   无需注册 直接购买</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="广发银行,金融网销平台,直销银行,投资理财,网络理财,金融产品,收益高" />
+<meta name="description" content="慧理财是广发银行倾力打造的金融网销平台,向客户提供金融产品信息发布与管理、交易资金结算等服务,平台借助优良的产品方案，完善的风控机制、现金的互联网技术手段,为广大客户提供高效、便捷、安全的财富管理及增值服务" />
+<meta name="format-detection" content="telephone=no.email=no" />
+<style>
+body{margin:0px; padding:0px;}
+.header{
+	height:97px;
+	width:100%;
+	margin:0 auto;
+	background:#f2f2f2;
+	}
+.logo{
+	height:97px;
+	width:1000px;
+	margin:0 auto;}
+.logo img{
+	float:left;
+	margin-top:30px;
+	}
+.container {
+	width: 100%;
+	background-color: #FFF;
+	text-align:center;
+	margin: 0 auto; /* 侧边的自动值与宽度结合使用，可以将布局居中对齐 */
+}
+.adv_big{width:100%; height:365px; background:url(http://www.95508.com/images/advertise/adv01.png) center no-repeat; min-width:1000px;}
+.adv01{width:1119px; height:426px; background:url(http://www.95508.com/images/advertise/adv02.png) center no-repeat; margin:0 auto; position:relative;}
+.adv02{width:1119px; height:426px; background:url(http://www.95508.com/images/advertise/adv03.png) center no-repeat;
+margin:0 auto; position:relative;}
+.btn_experience{
+	display:block;
+	width:165px;
+	height:50px;
+	position:absolute;
+	top:32px;
+	right:79px;
+	cursor:pointer;
+	}
+.btn_buy{
+	display: block;
+	width: 997px;
+	height: 403px;
+	position: absolute;
+	bottom: 20px;
+	right: 59px;
+	cursor: pointer;
+	}
+.btn_detial{
+	display: block;
+	width: 996px;
+	height: 407px;
+	position: absolute;
+	right: 60px;
+	bottom: 11px;
+	cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="logo">
+	<img src="http://www.95508.com/images/advertise/logo.png">
+    </div>
+</div>
+
+<div class="container">
+	<div class="adv_big"></div>
+    <div class="adv01"><!--体验按钮-->
+        <a href="https://8.95508.com/ibank/views/index.html" class="btn_buy"></a>          <!--购买按钮-->
+    </div> 
+    <div class="adv02">
+    	<a href="http://www.95508.com/activities.html" class="btn_detial"></a>      <!--详情按钮-->
+    </div>
+</div>
+
+
+<!-- Start: euc调用示例：BDRP_euc.c(data, dataID) -->
+<div style="position: fixed; top: 80px; width: 100%; padding: 50px; background: rgba(255,255,255,0.95); text-align: center; font-size: 12px;">
+	<input placeholder="输入需要发送的用户ID" id="input-for-euc-test">
+	<button type="button" onclick="BDRP_euc.c(document.getElementById('input-for-euc-test').value)">点击调用信息发送接口发送用户ID</button>
+	<span>点击后会向百度服务器发起请求</span>
+</div>
+<!-- End: euc调用示例 -->
+
+</body>
+<script type="text/javascript">
+(function () {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://www.95508.com/gs.js';
+    var firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(s, firstScript);
+})();
+</script>
+
+<!-- Start: 嵌入euc脚本 -->
+<script type="text/javascript">
+;(function(){
+    var appID = 2; //初始化配置，广发对应的appID是2
+    var dataID = 1; //初始化配置，dataID指明数据的内容，数据内容为用户ID则对应的dataID为1
+    var js = 'http://rpc.baidu.com/static/euc/BDRP_euc-1.0.min.js';
+    var stamp = Math.floor(new Date().getTime()/86400000);
+    document.write('<script id="JS_BDRP-EUC"'+((typeof(appID)!='undefined')?' data-app-id="'+appID+'"':'')+((typeof(dataID)!='undefined')?' data-data-id="'+dataID+'"':'')+' src="'+js+'?'+stamp+'" type="text/javascript"><\/script>');
+})();
+</script>
+<!-- End: 嵌入euc脚本 -->
+<script type="text/javascript" src="../src/BDRP_euc-1.0.min.js"></script>
+<script type="text/javascript" src="../src/baidu.js"></script>
+</html>
