@@ -52,7 +52,7 @@ public class XMLView extends ExceptionView {
 		response.addHeader( "Content-Type", "application/xml" );
 		try
 		{
-			response.getOutputStream().write( getXMLResponse( model ).getBytes( "UTF-8" ) );
+			//response.getOutputStream().write( getXMLResponse( model ).getBytes( "UTF-8" ) );
 		}
 		catch ( Exception e )
 		{
@@ -73,9 +73,9 @@ public class XMLView extends ExceptionView {
 		StringBuffer sb = new StringBuffer();
 		KeyedCollection output = (KeyedCollection)model.get(EMPConstance.ATTR_FLOW_OUTPUT);
 		Context context = (Context) model.get( EMPConstance.ATTR_CONTEXT );
-		Exception exception = (Exception) model.get( EMPConstance.ATTR_EXCEPTION );
+		//Exception exception = (Exception) model.get( EMPConstance.ATTR_EXCEPTION );
 		String ec = "0"; // 正常时，错误码为0
-		String errorMsg = "";
+		String errorMsg = "asass";
 		if ( exception != null )
 		{
 			if ( exception instanceof EMPException )
