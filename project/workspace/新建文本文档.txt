@@ -10,8 +10,8 @@ CATALOG TCPIP NODE db2
 
 
 CATALOG DATABASE bankdb
-	AS bankdb
-	AT NODE db2
+	
 	AUTHENTICATION SERVER;
 <font style="background-color: #000000"></font>
 
+aasasas
