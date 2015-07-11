@@ -4,8 +4,7 @@
 
 CATALOG TCPIP NODE db2
 	REMOTE 127.0.0.1
-	SERVER 50000
-	REMOTE_INSTANCE db2admin
+	
 	OSTYPE WIN;
 
 
@@ -14,4 +13,7 @@ CATALOG DATABASE bankdb
 	AUTHENTICATION SERVER;
 <font style="background-color: #000000"></font>
 
-aasasas
+
+SERVER 50000
+	REMOTE_INSTANCE db2admin
+
