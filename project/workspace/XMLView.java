@@ -82,6 +82,8 @@ public class XMLView extends ExceptionView {
 			{
 				ec = ((EMPException) exception).getErrorCode();
 				errorMsg = ((EMPException) exception).getShowMessage();
+				//ec = ((EMPException) exception).getErrorCode();
+				//errorMsg = ((EMPException) exception).getShowMessage();
 			}
 			else
 			{
@@ -100,7 +102,7 @@ public class XMLView extends ExceptionView {
 			if (urlField != null) {
 				String url = (String)context.get(urlField);
 				if (url != null) {
-					sb.append( "<rp>" ).append( url ).append( "</rp>" );
+					
 				}
 			}
 		}
