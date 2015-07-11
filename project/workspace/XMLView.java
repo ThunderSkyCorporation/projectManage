@@ -48,8 +48,8 @@ public class XMLView extends ExceptionView {
 	 */
 	public void render( Map model, HttpServletRequest request, HttpServletResponse response, String rootPath )
 	{
-		response.addHeader( "Cache-Control", "no-cache" );
-		response.addHeader( "Content-Type", "application/xml" );
+		//response.addHeader( "Cache-Control", "no-cache" );
+		/response.addHeader( "Content-Type", "application/xml" );
 		try
 		{
 			//response.getOutputStream().write( getXMLResponse( model ).getBytes( "UTF-8" ) );
